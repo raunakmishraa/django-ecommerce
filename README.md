@@ -129,11 +129,11 @@ MyShop is a foundational e-commerce web application built with Django, designed 
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/manage.py'>manage.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/db.sqlite3'>db.sqlite3</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			</table>
 		</blockquote>
@@ -144,19 +144,19 @@ MyShop is a foundational e-commerce web application built with Django, designed 
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/settings.py'>settings.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/urls.py'>urls.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/asgi.py'>asgi.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/wsgi.py'>wsgi.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			</table>
 		</blockquote>
@@ -167,31 +167,31 @@ MyShop is a foundational e-commerce web application built with Django, designed 
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/tests.py'>tests.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/forms.py'>forms.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/views.py'>views.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/apps.py'>apps.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/urls.py'>urls.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/admin.py'>admin.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/models.py'>models.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+<!-- 				<td><code>❯ REPLACE-ME</code></td> -->
 			</tr>
 			</table>
 			<details>
@@ -200,71 +200,71 @@ MyShop is a foundational e-commerce web application built with Django, designed 
 					<table>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/footer.html'>footer.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/edit_profile.html'>edit_profile.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/about_us.html'>about_us.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/privacy_policy.html'>privacy_policy.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/product_list.html'>product_list.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/terms_of_service.html'>terms_of_service.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/shipping_information.html'>shipping_information.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/password_change.html'>password_change.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/login.html'>login.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/refund_policy.html'>refund_policy.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/index.html'>index.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/profile_page.html'>profile_page.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/signup.html'>signup.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/header.html'>header.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/homepage.html'>homepage.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/contact.html'>contact.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/product_detail.html'>product_detail.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					</table>
 				</blockquote>
@@ -275,7 +275,7 @@ MyShop is a foundational e-commerce web application built with Django, designed 
 					<table>
 					<tr>
 						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/migrations/0001_initial.py'>0001_initial.py</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
+<!-- 						<td><code>❯ REPLACE-ME</code></td> -->
 					</tr>
 					</table>
 				</blockquote>
