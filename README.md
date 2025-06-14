@@ -1,0 +1,345 @@
+<p align="center">
+    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="center" width="30%">
+</p>
+<p align="center"><h1 align="center">DJANGO-ECOMMERCE</h1></p>
+<p align="center">
+	<em><code>❯ REPLACE-ME</code></em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/raunakmishraa/django-ecommerce?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/raunakmishraa/django-ecommerce?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/raunakmishraa/django-ecommerce?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/raunakmishraa/django-ecommerce?style=default&color=0080ff" alt="repo-language-count">
+</p>
+<p align="center"><!-- default option, no dependency badges. -->
+</p>
+<p align="center">
+	<!-- default option, no dependency badges. -->
+</p>
+<br>
+
+## 🔗 Table of Contents
+
+- [📍 Overview](#-overview)
+- [👾 Features](#-features)
+- [📁 Project Structure](#-project-structure)
+  - [📂 Project Index](#-project-index)
+- [🚀 Getting Started](#-getting-started)
+  - [☑️ Prerequisites](#-prerequisites)
+  - [⚙️ Installation](#-installation)
+  - [🤖 Usage](#🤖-usage)
+  - [🧪 Testing](#🧪-testing)
+- [📌 Project Roadmap](#-project-roadmap)
+- [🔰 Contributing](#-contributing)
+- [🎗 License](#-license)
+- [🙌 Acknowledgments](#-acknowledgments)
+
+---
+
+## 📍 Overview
+
+<code>❯ REPLACE-ME</code>
+
+---
+
+## 👾 Features
+
+<code>❯ REPLACE-ME</code>
+
+---
+
+## 📁 Project Structure
+
+```sh
+└── django-ecommerce/
+    ├── db.sqlite3
+    ├── frontend
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── forms.py
+    │   ├── migrations
+    │   ├── models.py
+    │   ├── templates
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── manage.py
+    └── online_Store
+        ├── __init__.py
+        ├── __pycache__
+        ├── asgi.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+```
+
+
+### 📂 Project Index
+<details open>
+	<summary><b><code>DJANGO-ECOMMERCE/</code></b></summary>
+	<details> <!-- __root__ Submodule -->
+		<summary><b>__root__</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/manage.py'>manage.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/db.sqlite3'>db.sqlite3</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- online_Store Submodule -->
+		<summary><b>online_Store</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/settings.py'>settings.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/urls.py'>urls.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/asgi.py'>asgi.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/online_Store/wsgi.py'>wsgi.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- frontend Submodule -->
+		<summary><b>frontend</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/tests.py'>tests.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/forms.py'>forms.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/views.py'>views.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/apps.py'>apps.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/urls.py'>urls.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/admin.py'>admin.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/models.py'>models.py</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+			<details>
+				<summary><b>templates</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/footer.html'>footer.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/edit_profile.html'>edit_profile.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/about_us.html'>about_us.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/privacy_policy.html'>privacy_policy.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/product_list.html'>product_list.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/terms_of_service.html'>terms_of_service.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/shipping_information.html'>shipping_information.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/password_change.html'>password_change.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/login.html'>login.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/refund_policy.html'>refund_policy.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/index.html'>index.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/profile_page.html'>profile_page.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/signup.html'>signup.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/header.html'>header.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/homepage.html'>homepage.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/contact.html'>contact.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/templates/product_detail.html'>product_detail.html</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>migrations</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/raunakmishraa/django-ecommerce/blob/master/frontend/migrations/0001_initial.py'>0001_initial.py</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
+</details>
+
+---
+## 🚀 Getting Started
+
+### ☑️ Prerequisites
+
+Before getting started with django-ecommerce, ensure your runtime environment meets the following requirements:
+
+- **Programming Language:** HTML
+
+
+### ⚙️ Installation
+
+Install django-ecommerce using one of the following methods:
+
+**Build from source:**
+
+1. Clone the django-ecommerce repository:
+```sh
+❯ git clone https://github.com/raunakmishraa/django-ecommerce/
+```
+
+2. Navigate to the project directory:
+```sh
+❯ cd django-ecommerce
+```
+
+3. Install the project dependencies:
+
+echo 'INSERT-INSTALL-COMMAND-HERE'
+
+
+
+### 🤖 Usage
+Run django-ecommerce using the following command:
+echo 'INSERT-RUN-COMMAND-HERE'
+
+### 🧪 Testing
+Run the test suite using the following command:
+echo 'INSERT-TEST-COMMAND-HERE'
+
+---
+## 📌 Project Roadmap
+
+- [X] **`Task 1`**: <strike>Implement feature one.</strike>
+- [ ] **`Task 2`**: Implement feature two.
+- [ ] **`Task 3`**: Implement feature three.
+
+---
+
+## 🔰 Contributing
+
+- **💬 [Join the Discussions](https://github.com/raunakmishraa/django-ecommerce/discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/raunakmishraa/django-ecommerce/issues)**: Submit bugs found or log feature requests for the `django-ecommerce` project.
+- **💡 [Submit Pull Requests](https://github.com/raunakmishraa/django-ecommerce/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+
+<details closed>
+<summary>Contributing Guidelines</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your github account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+   ```sh
+   git clone https://github.com/raunakmishraa/django-ecommerce/
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to github**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
+</details>
+
+<details closed>
+<summary>Contributor Graph</summary>
+<br>
+<p align="left">
+   <a href="https://github.com{/raunakmishraa/django-ecommerce/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=raunakmishraa/django-ecommerce">
+   </a>
+</p>
+</details>
+
+---
+
+## 🎗 License
+
+This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+## 🙌 Acknowledgments
+
+- List any resources, contributors, inspiration, etc. here.
+
+---
