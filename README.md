@@ -41,7 +41,53 @@ MyShop is a foundational e-commerce web application built with Django, designed 
 
 ## 👾 Features
 
-<code>❯ REPLACE-ME</code>
+### 1. User Authentication & Management
+
+* **User Registration (Sign Up):** Users can create new accounts.
+
+* **User Login:** Registered users can log in to their accounts.
+
+* **User Logout:** Authenticated users can log out.
+
+* **Custom User Model:** Extends Django's `AbstractUser` to include `phone_number` and `address` fields, providing more detailed user profiles.
+
+* **User Profile Page:** Authenticated users have a dedicated profile page displaying their username, email, first name, last name, phone number, and address.
+
+* **Edit Profile:** Users can update their `username`, `email`, `first_name`, `last_name`, `phone_number`, and `address` from a dedicated edit page.
+
+* **Change Password:** A separate, secure page allows authenticated users to change their password.
+
+* **Message Alerts:** Displays success/error messages for login, signup, profile edits, and password changes.
+
+### 2. Static Pages
+
+* **Home Page (`index.html`):** Features a hero section, a dynamically loaded "featured products" section (with placeholder data and links to product details), and a newsletter signup.
+
+* **About Us Page (`about_us.html`):** Provides information about the store's mission and offerings.
+
+* **Terms of Service Page (`terms_of_service.html`):** Outlines the terms and conditions for using the website.
+
+* **Privacy Policy Page (`privacy_policy.html`):** Details how user data is collected and used.
+
+* **Shipping Information Page (`shipping_information.html`):** Provides details about shipping policies.
+
+* **Refund Policy Page (`refund_policy.html`):** Explains the refund and return guidelines.
+
+* **Consistent Header & Footer:** All pages include a unified navigation header and a detailed footer with quick links. The header adapts based on user authentication status (login/signup buttons vs. profile/cart buttons).
+
+### 3. Product Catalog
+
+* **Product List Page (`product_list.html`):** Displays a grid of products with basic information (name, price, image, short description) and links to individual product detail pages.
+
+* **Product Detail Page (`product_detail.html`):** Shows comprehensive information for a single product, including a larger image, full description, price, and key features/specifications.
+
+* **Product Model (`Product`):** Defines product attributes such as name, description, price, stock, image, and a foreign key to `Category`.
+
+* **Category Model (`Category`):** Allows for organizing products into different categories.
+
+### 4. Admin Interface
+
+* **Django Admin Integration:** `CustomUser`, `Category`, and `Product` models are registered with the Django admin, allowing for easy management of users, product categories, and products directly from the admin panel.
 
 ---
 
