@@ -120,6 +120,41 @@ MyShop is a foundational e-commerce web application built with Django, designed 
 
 
 ### 📂 Project Index
+
+* **User Authentication & Management**
+    * User Registration (Sign Up)
+    * User Login
+    * User Logout
+    * Custom User Model (`accounts/models.py`)
+    * User Profile Page (`templates/profile_page.html`)
+    * Edit Profile Page (`templates/edit_profile.html`)
+    * Change Password Page (`templates/password_change.html`)
+    * Related Views (`accounts/views.py`) and URLs (`myecommerceproject/urls.py`, `accounts/urls.py`)
+
+* **Static Pages**
+    * Home Page (`templates/index.html`)
+    * About Us Page (`templates/about_us.html`)
+    * Terms of Service Page (`templates/terms_of_service.html`)
+    * Privacy Policy Page (`templates/privacy_policy.html`)
+    * Shipping Information Page (`templates/shipping_information.html`)
+    * Refund Policy Page (`templates/refund_policy.html`)
+    * Common Header (`templates/header.html`) and Footer (`templates/footer.html`)
+    * Related Views (`accounts/views.py`) and URLs (`myecommerceproject/urls.py`)
+
+* **Product Catalog**
+    * Product List Page (`templates/product_list.html`)
+    * Product Detail Page (`templates/product_detail.html`)
+    * Product Model (`products/models.py`)
+    * Category Model (`products/models.py`)
+    * Related Views (`accounts/views.py`) and URLs (`myecommerceproject/urls.py`)
+
+* **Admin Interface**
+    * Admin Model Registrations (`accounts/admin.py`, `products/admin.py`)
+
+* **Core Configuration**
+    * Django Settings (`online_Store/settings.py`)
+    * Main Project URLs (`online_Store/urls.py`)
+
 <details open>
 	<summary><b><code>DJANGO-ECOMMERCE/</code></b></summary>
 	<details> <!-- __root__ Submodule -->
