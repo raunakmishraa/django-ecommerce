@@ -326,9 +326,98 @@ echo 'python manage.py test'
 ---
 ## 📌 Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+# MyShop E-commerce Application Roadmap
+
+This roadmap outlines the planned development phases for the MyShop E-commerce application, building upon the existing foundational features to create a fully functional and robust online shopping platform.
+
+---
+
+## Phase 1: Core Foundation (Current State)
+
+This phase covers the features already implemented in the project.
+
+* **User Authentication & Management:**
+    * [x] User Registration, Login, Logout.
+    * [x] Custom User Model with phone number and address.
+    * [x] User Profile page with view and edit functionalities.
+    * [x] Secure Change Password feature.
+    * [x] System message alerts for user actions.
+
+* **Static Pages:**
+    * [x] Home Page (Hero, Featured Products preview, Newsletter Signup).
+    * [x] "About Us", "Terms of Service", "Privacy Policy", "Shipping Information", "Refund Policy" pages.
+    * [x] Consistent header and footer across all pages with responsive navigation.
+
+* **Product Catalog (Basic):**
+    * [x] Product List page displaying placeholder products.
+    * [x] Product Detail page for individual product information.
+    * [x] Django Models for `Product` and `Category`.
+
+* **Admin Interface:**
+    * [x] Django Admin integration for `CustomUser`, `Category`, and `Product` models.
+
+---
+
+## Phase 2: E-commerce Core Functionality
+
+Focus on implementing the essential features required for a transactional e-commerce store.
+
+* **Shopping Cart:**
+    * [ ] Add products to cart.
+    * [ ] View cart contents (quantities, subtotals).
+    * [ ] Update product quantities in the cart.
+    * [ ] Remove items from the cart.
+    * [ ] Persist cart data (e.g., using sessions or database for logged-in users).
+
+* **Order Management:**
+    * [ ] Checkout process (collecting shipping/billing info).
+    * [ ] Create and store order details (products, quantities, total, status).
+    * [ ] User's order history page to view past purchases.
+
+---
+
+## Phase 3: Enhanced Product & User Experience
+
+Adding features to improve usability, discoverability, and engagement.
+
+* **Product Search & Filtering:**
+    * [ ] Implement a search bar for products.
+    * [ ] Add filters by category, price range, etc., on the product list page.
+
+* **User Reviews & Ratings:**
+    * [ ] Allow logged-in users to submit reviews and assign ratings to products.
+    * [ ] Display average ratings and individual reviews on product detail pages.
+
+* **Product Image Management:**
+    * [ ] Enable actual image uploads for products via the Django admin interface.
+    * [ ] Display product images dynamically on product list and detail pages.
+
+* **Improved Error Handling & Feedback:**
+    * [ ] Implement custom 404 (Page Not Found) and 500 (Server Error) pages.
+    * [ ] More granular user feedback for various interactions.
+
+---
+
+## Phase 4: Advanced Features & Deployment
+
+Preparing the application for real-world usage and scaling.
+
+* **Payment Gateway Integration:**
+    * [ ] Integrate with a secure payment gateway (e.g., Stripe, PayPal) for processing transactions.
+
+* **Frontend Framework Integration (Optional):**
+    * [ ] Consider integrating a modern JavaScript framework (e.g., React, Vue.js) for a more dynamic and interactive user interface, especially for the cart and checkout processes.
+
+* **Deployment Strategy:**
+    * [ ] Prepare the application for deployment to a production server (e.g., Heroku, AWS, DigitalOcean).
+    * [ ] Configure production-ready settings, including static file serving, media file storage, and database.
+
+* **Admin Enhancements:**
+    * [ ] Implement custom actions or advanced filters in Django admin as needed for business operations.
+
+---
+
+This roadmap is a living document and may be adjusted based on feedback, priorities, and emerging requirements.
 
 ---
 
