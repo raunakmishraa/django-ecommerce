@@ -1,0 +1,134 @@
+product_list<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - MyShop</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+            min-height: 100vh; /* Ensures full height for flex column layout */
+            display: flex;
+            flex-direction: column;
+        }
+        .content-wrap {
+            flex: 1; /* Allows content to grow and push footer down */
+            padding: 2rem 1rem; /* Added more padding for content */
+            width: 100%;
+            max-width: 1200px; /* Wider content for product grid */
+            margin: auto; /* Center content */
+        }
+        h1 {
+            font-size: 1.875rem; /* text-3xl, matches MyShop title in navbar */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: rgb(67, 56, 202); /* Matches text-indigo-700 */
+        }
+        /* Product Card specific styles */
+        .product-card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* shadow-md */
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+        }
+        .product-image {
+            width: 100%;
+            height: 200px; /* Fixed height for consistent image display */
+            object-fit: cover;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- Include Header Template -->
+    {% include 'header.html' %}
+
+    <div class="content-wrap">
+        <h1>Our Products</h1>
+
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Product Cards will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Include Footer Template -->
+    {% include 'footer.html' %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // JavaScript for hamburger menu functionality (copied from header.html)
+            const menuButton = document.getElementById('menu-button');
+            const navigationMenu = document.getElementById('navigation-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const crossIcon = document.getElementById('cross-icon');
+
+            if (menuButton) {
+                menuButton.addEventListener('click', () => {
+                    navigationMenu.classList.toggle('hidden');
+                    navigationMenu.classList.toggle('flex');
+                    hamburgerIcon.classList.toggle('hidden');
+                    crossIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Set current year in footer (if footer is included on this page)
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+
+            // Dummy product data (can be replaced by Django context data later)
+            const products = [
+                { id: 1, name: 'Stylish Headphones', price: 99.99, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Headphones', description: 'Immersive sound and comfortable fit for all-day listening.' },
+                { id: 2, name: 'Modern Smartwatch', price: 149.99, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Smartwatch', description: 'Track your fitness, notifications, and more with style.' },
+                { id: 3, name: 'Ergonomic Office Chair', price: 249.00, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Office+Chair', description: 'Designed for comfort and support during long work hours.' },
+                { id: 4, name: 'Travel Backpack', price: 79.50, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Backpack', description: 'Durable and spacious, perfect for your next adventure.' },
+                { id: 5, name: 'Organic Coffee Beans', price: 18.00, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Coffee+Beans', description: 'Rich, aromatic, and ethically sourced from the best farms.' },
+                { id: 6, name: 'Noise-Cancelling Earbuds', price: 129.00, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Earbuds', description: 'Compact and powerful, enjoy pure audio bliss on the go.' },
+                { id: 7, name: 'Vintage Camera', price: 320.00, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Camera', description: 'Capture timeless moments with a classic touch.' },
+                { id: 8, name: 'Stainless Steel Water Bottle', price: 25.00, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Water+Bottle', description: 'Keep your drinks cold for hours, eco-friendly design.' },
+                { id: 9, name: 'Smart Home Hub', price: 199.99, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Smart+Hub', description: 'Centralize control of your smart devices.' },
+                { id: 10, name: 'Gaming Keyboard', price: 89.99, imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Keyboard', description: 'Tactile keys and RGB lighting for the ultimate gaming experience.' }
+            ];
+
+            const productGrid = document.getElementById('product-grid');
+
+            // Function to create a product card
+            function createProductCard(product) {
+                const card = document.createElement('div');
+                card.className = 'product-card rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 overflow-hidden';
+
+                // Changed the button to an anchor tag linking to the product_detail page
+                card.innerHTML = `
+                    <img src="${product.imageUrl}" alt="${product.name}" class="product-image onerror="this.onerror=null;this.src='https://placehold.co/400x300/E0E0E0/666666?text=Image+Error';'">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1 text-gray-900">${product.name}</h3>
+                        <p class="text-indigo-600 text-xl font-bold mb-2">$${product.price.toFixed(2)}</p>
+                        <p class="text-gray-600 text-sm mb-3">${product.description}</p>
+                        <a href="/products/${product.id}/" class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition duration-300 shadow-md block text-center">
+                            View Details
+                        </a>
+                    </div>
+                `;
+                return card;
+            }
+
+            // Render products
+            products.forEach(product => {
+                productGrid.appendChild(createProductCard(product));
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - MyShop</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+            min-height: 100vh; /* Ensures full height for flex column layout */
+            display: flex;
+            flex-direction: column;
+        }
+        .content-wrap {
+            flex: 1; /* Allows content to grow and push footer down */
+            padding: 2rem 1rem; /* Added more padding for content */
+            width: 90%;
+            margin: auto; /* Center content */
+        }
+        h1 {
+            font-size: 1.875rem; /* text-3xl, matches MyShop title */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: rgb(67, 56, 202); /* Matches text-indigo-700 */
+        }
+        h2 {
+            font-size: 1.875rem; /* text-3xl, larger than normal text */
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #374151; /* Gray 700 */
+        }
+        h3 {
+            font-size: 1.5rem; /* text-2xl, larger than normal text */
+            font-weight: 600; /* font-semibold */
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #4b5563; /* Gray 600 */
+        }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #4b5563; /* Gray 600 */
+        }
+        ul, ol {
+            list-style: decimal; /* Changed to decimal (numbered) */
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4b5563; /* Gray 600 */
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- Include Header Template -->
+    {% include 'header.html' %}
+
+    <div class="content-wrap bg-white rounded-lg shadow-lg">
+        <h1 style="font-size: 30px;">Refund Policy</h1>
+
+        <p>We want you to be completely satisfied with your purchase from MyShop. If you are not entirely happy, we're here to help.</p>
+
+        <h2>1. Returns</h2>
+        <p>You have <strong>[Number] calendar days</strong> to return an item from the date you received it. To be eligible for a return, your item must be:</p>
+        <ol>
+            <li>Unused and in the same condition that you received it.</li>
+            <li>In its original packaging.</li>
+            <li>Accompanied by the receipt or proof of purchase.</li>
+        </ol>
+
+        <h2>2. Refunds</h2>
+        <p>Once we receive your item, we will inspect it and notify you that we have received your returned item. We will immediately notify you on the status of your refund after inspecting the item.</p>
+        <p>If your return is approved, we will initiate a refund to your original method of payment. You will receive the credit within a certain amount of days, depending on your card issuer's policies.</p>
+
+        <h2>3. Shipping</h2>
+        <p>You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund.</p>
+
+        <h2>4. Damaged or Defective Items</h2>
+        <p>If you receive a damaged or defective item, please contact us immediately at [Your Customer Service Email/Phone Number] with details of the product and the defect. We will provide instructions on how to return the item and arrange for a replacement or a full refund, including return shipping costs if applicable.</p>
+
+        <h2>5. Non-Returnable Items</h2>
+        <p>Certain types of items cannot be returned, such as:</p>
+        <ol>
+            <li>Perishable goods (e.g., food, flowers, newspapers, magazines)</li>
+            <li>Intimate or sanitary goods</li>
+            <li>Hazardous materials, flammable liquids or gases</li>
+            <li>Gift cards</li>
+            <li>Downloadable software products</li>
+            <li>Some health and personal care items</li>
+        </ol>
+        <p>Please contact us if you have questions or concerns about your specific item.</p>
+
+        <h2>6. Exchanges</h2>
+        <p>We only replace items if they are defective or damaged. If you need to exchange it for the same item, send us an email at [Your Customer Service Email] and send your item to: [Your Return Address].</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions on how to return your item to us, contact us at [Your Customer Service Email] or [Your Customer Service Phone Number].</p>
+    </div>
+
+    <!-- Include Footer Template -->
+    {% include 'footer.html' %}
+
+    <script>
+        // JavaScript for hamburger menu functionality (copied from header.html)
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const navigationMenu = document.getElementById('navigation-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const crossIcon = document.getElementById('cross-icon');
+
+            if (menuButton) {
+                menuButton.addEventListener('click', () => {
+                    navigationMenu.classList.toggle('hidden');
+                    navigationMenu.classList.toggle('flex');
+                    hamburgerIcon.classList.toggle('hidden');
+                    crossIcon.classList.toggle('hidden');
+                });
+            }
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

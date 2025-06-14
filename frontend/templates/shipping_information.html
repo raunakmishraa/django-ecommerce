@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information - MyShop</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+            min-height: 100vh; /* Ensures full height for flex column layout */
+            display: flex;
+            flex-direction: column;
+        }
+        .content-wrap {
+            flex: 1; /* Allows content to grow and push footer down */
+            padding: 2rem 1rem; /* Added more padding for content */
+            width: 90%;
+            margin: auto; /* Center content */
+        }
+        h1 {
+            font-size: 1.875rem; /* text-3xl, matches MyShop title */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: rgb(67, 56, 202); /* Matches text-indigo-700 */
+        }
+        h2 {
+            font-size: 1.875rem; /* text-3xl, larger than normal text */
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #374151; /* Gray 700 */
+        }
+        h3 {
+            font-size: 1.5rem; /* text-2xl, larger than normal text */
+            font-weight: 600; /* font-semibold */
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #4b5563; /* Gray 600 */
+        }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #4b5563; /* Gray 600 */
+        }
+        ul, ol {
+            list-style: decimal; /* Changed to decimal (numbered) */
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4b5563; /* Gray 600 */
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- Include Header Template -->
+    {% include 'header.html' %}
+
+    <div class="content-wrap bg-white rounded-lg shadow-lg">
+        <h1 style="font-size: 30px;">Shipping Information</h1>
+
+        <p>At MyShop, we are committed to delivering your products quickly and efficiently. Please review our shipping policy below:</p>
+
+        <h2>1. Shipping Destinations</h2>
+        <p>We currently ship to all addresses within [Your Country/Region]. For international shipping inquiries, please contact our customer service.</p>
+
+        <h2>2. Processing Time</h2>
+        <p>Orders are typically processed within <strong>1-2 business days</strong> (Monday-Friday, excluding holidays) after your order is placed. You will receive an email confirmation once your order has been shipped.</p>
+
+        <h2>3. Estimated Delivery Times</h2>
+        <p>Delivery times vary based on your location and the shipping method selected at checkout:</p>
+        <ol>
+            <li><strong>Standard Shipping:</strong> 5-7 business days</li>
+            <li><strong>Expedited Shipping:</strong> 2-3 business days</li>
+            <li><strong>Overnight Shipping:</strong> 1 business day (for orders placed before 1 PM [Your Time Zone])</li>
+        </ol>
+        <p>Please note that these are estimated delivery times and actual delivery may vary due to unforeseen circumstances or peak seasons.</p>
+
+        <h2>4. Shipping Costs</h2>
+        <p>Shipping costs are calculated based on the weight of your order, the shipping method selected, and your delivery address. You can view the exact shipping cost at checkout before finalizing your purchase.</p>
+        <ul>
+            <li>Free standard shipping on all orders over $[Minimum Amount].</li>
+            <li>Expedited and overnight shipping rates will be displayed at checkout.</li>
+        </ul>
+
+        <h2>5. Order Tracking</h2>
+        <p>Once your order is shipped, you will receive a shipping confirmation email containing your tracking number. You can use this number to track your package directly on the carrier's website.</p>
+
+        <h2>6. Damaged or Lost Packages</h2>
+        <p>If your package arrives damaged, please contact us immediately within 48 hours of delivery. If a package is lost in transit, please notify us within 7 business days from the estimated delivery date so we can assist you in filing a claim with the carrier.</p>
+
+        <h2>7. Address Accuracy</h2>
+        <p>It is the customer's responsibility to ensure the accuracy of the shipping address provided. MyShop is not responsible for delayed or undeliverable shipments due to incorrect address information. If a package is returned to us due to an incorrect address, the customer will be responsible for re-shipping costs.</p>
+    </div>
+
+    <!-- Include Footer Template -->
+    {% include 'footer.html' %}
+
+    <script>
+        // JavaScript for hamburger menu functionality (copied from header.html)
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const navigationMenu = document.getElementById('navigation-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const crossIcon = document.getElementById('cross-icon');
+
+            if (menuButton) {
+                menuButton.addEventListener('click', () => {
+                    navigationMenu.classList.toggle('hidden');
+                    navigationMenu.classList.toggle('flex');
+                    hamburgerIcon.classList.toggle('hidden');
+                    crossIcon.classList.toggle('hidden');
+                });
+            }
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

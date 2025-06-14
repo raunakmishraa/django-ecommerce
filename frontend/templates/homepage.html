@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Store - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        /* Product Card specific styles for consistency */
+        .product-card-home {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* shadow-md */
+            transition: all 0.3s ease;
+        }
+        .product-card-home:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+        }
+        .product-image-home {
+            width: 100%;
+            height: 192px; /* h-48 */
+            object-fit: cover;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Include Header -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 px-4 text-center rounded-b-xl shadow-lg mb-12">
+        <div class="container mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Discover Your Next Favorite Thing
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                High-quality products, delivered right to your doorstep.
+            </p>
+            <a href="{% url 'product_list' %}" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-10 py-4 rounded-full text-lg font-bold shadow-xl transform hover:scale-105 transition duration-300">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Featured Products</h2>
+
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product Cards will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Call to Action / Newsletter Section -->
+    <section class="bg-indigo-100 py-16 px-4 text-center rounded-xl mx-auto container shadow-inner mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-indigo-800">Stay Updated with Our Latest Arrivals!</h2>
+        <p class="text-lg text-indigo-700 mb-8">Sign up for our newsletter to get exclusive deals and new product alerts.</p>
+        <form class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
+            <input type="email" placeholder="Your Email Address" class="flex-grow p-4 rounded-lg border-2 border-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 text-gray-700" required>
+            <button type="submit" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-700 shadow-md transform hover:scale-105 transition duration-300">
+                Subscribe
+            </button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set current year in footer
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+
+            // Get references to menu elements
+            const menuButton = document.getElementById('menu-button');
+            const navigationMenu = document.getElementById('navigation-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const crossIcon = document.getElementById('cross-icon');
+
+            // Add event listener to the menu button
+            if (menuButton && navigationMenu && hamburgerIcon && crossIcon) {
+                menuButton.addEventListener('click', () => {
+                    // Toggle the 'hidden' class on the navigation menu to show/hide it
+                    navigationMenu.classList.toggle('hidden');
+                    // Toggle the 'flex' class to make it a flex container when visible
+                    navigationMenu.classList.toggle('flex');
+
+                    // Toggle the visibility of hamburger and cross icons
+                    hamburgerIcon.classList.toggle('hidden');
+                    crossIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Dummy product data
+            const products = [
+                {
+                    id: 1,
+                    name: 'Stylish Headphones',
+                    price: 99.99,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+1',
+                    description: 'Immersive sound and comfortable fit for all-day listening.',
+                    category: 'Electronics'
+                },
+                {
+                    id: 2,
+                    name: 'Modern Smartwatch',
+                    price: 149.99,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+2',
+                    description: 'Track your fitness, notifications, and more with style.',
+                    category: 'Electronics'
+                },
+                {
+                    id: 3,
+                    name: 'Ergonomic Office Chair',
+                    price: 249.00,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+3',
+                    description: 'Designed for comfort and support during long work hours.',
+                    category: 'Home & Office'
+                },
+                {
+                    id: 4,
+                    name: 'Travel Backpack',
+                    price: 79.50,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+4',
+                    description: 'Durable and spacious, perfect for your next adventure.',
+                    category: 'Accessories'
+                },
+                {
+                    id: 5,
+                    name: 'Organic Coffee Beans',
+                    price: 18.00,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+5',
+                    description: 'Rich, aromatic, and ethically sourced from the best farms.',
+                    category: 'Food & Beverage'
+                },
+                {
+                    id: 6,
+                    name: 'Noise-Cancelling Earbuds',
+                    price: 129.00,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+6',
+                    description: 'Compact and powerful, enjoy pure audio bliss on the go.',
+                    category: 'Electronics'
+                },
+                {
+                    id: 7,
+                    name: 'Vintage Camera',
+                    price: 320.00,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+7',
+                    description: 'Capture timeless moments with a classic touch.',
+                    category: 'Photography'
+                },
+                {
+                    id: 8,
+                    name: 'Stainless Steel Water Bottle',
+                    price: 25.00,
+                    imageUrl: 'https://placehold.co/400x300/F5F5F5/333333?text=Product+8',
+                    description: 'Keep your drinks cold for hours, eco-friendly design.',
+                    category: 'Home Goods'
+                }
+            ];
+
+            const productGrid = document.getElementById('product-grid');
+
+            // Function to create a product card
+            function createProductCard(product) {
+                const card = document.createElement('div');
+                card.className = 'product-card-home rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden';
+
+                card.innerHTML = `
+                    <img src="${product.imageUrl}" alt="${product.name}" class="product-image-home" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E0E0E0/666666?text=Image+Error';'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">${product.name}</h3>
+                        <p class="text-indigo-600 text-2xl font-bold mb-4">$${product.price.toFixed(2)}</p>
+                        <p class="text-gray-600 text-sm mb-4">${product.description}</p>
+                        <a href="/products/${product.id}/" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300 shadow-md block text-center">
+                            View Details
+                        </a>
+                    </div>
+                `;
+                return card;
+            }
+
+            // Render products
+            products.forEach(product => {
+                productGrid.appendChild(createProductCard(product));
+            });
+        });
+    </script>
+    <!-- Include Footer -->
+    {% include 'footer.html' %}
+</body>
+</html>

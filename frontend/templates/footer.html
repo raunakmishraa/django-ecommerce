@@ -1,0 +1,42 @@
+<!-- templates/footer.html -->
+<footer class="bg-gray-800 text-white py-10 px-4 mt-12 rounded-t-xl">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Business Info -->
+        <div>
+            <h3 class="text-2xl font-bold mb-4 text-indigo-400">MyShop</h3>
+            <p class="text-gray-400 text-sm mb-2">123 E-commerce Lane,</p>
+            <p class="text-gray-400 text-sm mb-2">Digital City, DC 12345</p>
+            <p class="text-gray-400 text-sm">Email: info@myshop.com</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4 text-indigo-400">Quick Links</h3>
+            <ul class="space-y-2">
+                <li><a href="{% url 'privacy_policy' %}" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                <li><a href="{% url 'terms_of_service' %}" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                <li><a href="{% url 'shipping_information' %}" class="text-gray-400 hover:text-white transition duration-300">Shipping Information</a></li>
+                <li><a href="{% url 'refund_policy' %}" class="text-gray-400 hover:text-white transition duration-300">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media / Contact -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4 text-indigo-400">Connect With Us</h3>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646A4.197 4.197 0 0021.6 4c-.82.488-1.714.814-2.652.994a4.102 4.102 0 00-6.157-.751c-2.48 2.264-1.258 5.753-.027 6.436C11.332 10.84 10.372 10.36 9.5 9.774v.05c0 2.544 1.815 4.673 4.225 5.162a4.212 4.212 0 01-1.875.071c.677 2.115 2.627 3.654 4.974 3.692a8.214 8.214 0 01-5.65 1.954c-.347 0-.685-.016-1.02-.064A11.614 11.614 0 008.29 20.251z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.79c0-2.508 1.493-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22h7.33v-9.213h2.54l.397-2.89h-2.937V7.5c0-.986.321-1.745 1.89-1.745h1.07V2.222S14.837 2 14.17 2c-2.023 0-3.518 1.203-3.518 3.518v2.181h-2.13v3.088h2.13V22h-4.324C4.382 21.054 2 17.067 2 12c0-5.523 4.477-10 10-10z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.002 3.797.043 1.054.049 1.795.216 2.426.465.66.254 1.21.593 1.774 1.157.564.564.903 1.114 1.157 1.774.249.631.416 1.372.465 2.426.041 1.013.043 1.368.043 3.797s-.002 2.784-.043 3.797c-.049 1.054-.216 1.795-.465 2.426-.254.66-.593 1.21-1.157 1.774-.564.564-1.114.903-1.157 1.774-.249-.631-.416-1.372-.465-2.426-.041-1.013-.043-1.368-.043-3.797s.001-2.793.042-3.793c.046.996.212 1.564.367 1.99.155.43.345.705.584.944.239.239.514.429.944.584.426.155.994.321 1.99.367 1 .041 1.446.042 3.793.042s2.793-.001 3.793-.042c.996-.046 1.564-.212 1.99-.367.43-.155.705-.345.944-.584.239-.239.429-.514.584-.944-.155-.426-.321-.994-.367-1.99-.041-1-.042-1.446-.042-3.793s.001-2.793.042-3.793c.046-.996.212-1.564.367-1.99.155-.43.345-.705.584-.944.239-.239.429-.514.584-.944-.155-.426-.321-.994-.367-1.99C14.793 4.144 14.347 4.143 12.315 4.143zm0 4.099A3.658 3.658 0 1015.973 12.143 3.658 3.658 0 0012.315 8.242zm0 2.143a1.515 1.515 0 110 3.03 1.515 1.515 0 010-3.03zm6.657-6.262a.754.754 0 110 1.508.754.754 0 010-1.508z" clip-rule="evenodd"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center text-gray-400 text-sm mt-8">
+            &copy; <span id="current-year"></span> MyShop. All rights reserved.
+        </div>
+    </div>
+</footer>
