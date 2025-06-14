@@ -35,7 +35,7 @@
 
 ## 📍 Overview
 
-<code>❯ REPLACE-ME</code>
+MyShop is a foundational e-commerce web application built with Django, designed to provide a seamless online shopping experience. This project currently implements core functionalities including user authentication, profile management, static content pages (like legal policies and "About Us"), and basic product listing and detail views. It is set up with a clean, responsive user interface using Tailwind CSS.
 
 ---
 
