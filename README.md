@@ -312,13 +312,12 @@ Install django-ecommerce using one of the following methods:
 
 3. Install the project dependencies:
 
-echo 'INSERT-INSTALL-COMMAND-HERE'
-
+echo 'pip install Django Pillow'
 
 
 ### 🤖 Usage
 Run django-ecommerce using the following command:
-echo 'INSERT-RUN-COMMAND-HERE'
+echo 'python manage.py runserver'
 
 ### 🧪 Testing
 Run the test suite using the following command:
