@@ -321,7 +321,7 @@ echo 'python manage.py runserver'
 
 ### 🧪 Testing
 Run the test suite using the following command:
-echo 'INSERT-TEST-COMMAND-HERE'
+echo 'python manage.py test'
 
 ---
 ## 📌 Project Roadmap
